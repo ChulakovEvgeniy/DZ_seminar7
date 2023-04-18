@@ -22,6 +22,7 @@ void PrintArray(double[,] matr)
         Console.WriteLine();
     }
 }
+
 void FillArray(double[,] matr, int min, int max)
 {
     Random rand = new Random();
@@ -33,6 +34,7 @@ void FillArray(double[,] matr, int min, int max)
         }
     }
 }
+
 Console.Clear();
 int rows = InNumber("Введите количество строк");
 int columns = InNumber("Введите количнство столбцов");

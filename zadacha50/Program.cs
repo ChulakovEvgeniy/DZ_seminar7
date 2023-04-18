@@ -17,6 +17,7 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
+
 void FillArray(int[,] matr, int min, int max)
 {
     Random rand = new Random();
@@ -28,6 +29,7 @@ void FillArray(int[,] matr, int min, int max)
         }
     }
 }
+
 int InNumber(string nameSpace)
 {
     System.Console.Write(nameSpace);
@@ -42,7 +44,6 @@ void SearchNumber(int[,] matr, int number, int i, int j)
     {
         for (i = 0; i < matr.GetLength(0); i++)
         {
-
             for (j = 0; j < matr.GetLength(1); j++)
             {
                 if (number == matr[i, j])
@@ -51,7 +52,6 @@ void SearchNumber(int[,] matr, int number, int i, int j)
                     return;
                 }
             }
-
         }
         System.Console.WriteLine("такой цифры нет");
     }

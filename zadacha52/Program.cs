@@ -16,6 +16,7 @@ void PrintArray(int[,] matr)
         Console.WriteLine();
     }
 }
+
 void FillArray(int[,] matr, int min, int max)
 {
     Random rand = new Random();
@@ -27,6 +28,7 @@ void FillArray(int[,] matr, int min, int max)
         }
     }
 }
+
 int InNumber(string nameSpace)
 {
     System.Console.Write(nameSpace);
@@ -47,6 +49,7 @@ void SumInColumns(int[,] matr)
         sum = 0;
     }
 }
+
 Console.Clear();
 int rows = InNumber("Введите количество строк");
 int columns = InNumber("Введите количнство столбцов");
