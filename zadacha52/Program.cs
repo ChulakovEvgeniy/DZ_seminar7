@@ -36,24 +36,26 @@ int InNumber(string nameSpace)
     return num;
 }
 
-void SumInColumns(int[,] matr)
+void ArifSumInColumns(int[,] matr)
 {
-    int sum = 0;
+    double sum = 0;
     for (int j = 0; j < matr.GetLength(1); j++)
     {
         for (int i = 0; i < matr.GetLength(0); i++)
         {
             sum += matr[i,j];
         }
-        Console.WriteLine($"{j+1} столбец = {sum}");
+        double arif = sum/matr.GetLength(1);
+        Console.WriteLine($"{j+1} столбец = {arif}");
         sum = 0;
     }
 }
 
 Console.Clear();
-int rows = InNumber("Введите количество строк");
-int columns = InNumber("Введите количнство столбцов");
+int rows = InNumber("Введите количество строк: ");
+int columns = InNumber("Введите количнство столбцов: ");
 int[,] array = new int[rows, columns];
 FillArray(array, 5, 10);
 PrintArray(array);
-SumInColumns(array);
+System.Console.WriteLine();
+ArifSumInColumns(array);
